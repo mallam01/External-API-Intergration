@@ -1,0 +1,5 @@
+#Checkout the code 
+#run mvn commands 
+
+mcn clean install 
+mvn eclipse:eclipse 
