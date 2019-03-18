@@ -22,7 +22,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.webservice.ExternalAPIIntergration.service.ExternalService;
 
 
-public class ExternalResourceUnitTest extends JerseyTest {
+public class ExternalResourceUnitTest{
 
 	@InjectMocks
 	ExternalResource externalResource;
@@ -30,32 +30,25 @@ public class ExternalResourceUnitTest extends JerseyTest {
 	@Mock
 	ExternalService externalService;
 
-	
-	
-	
-	@Override
-    protected Application configure() {
-		 MockitoAnnotations.initMocks(this);
-		 enable(TestProperties.LOG_TRAFFIC);
-	     enable(TestProperties.DUMP_ENTITY);
-	     ApplicationContext context = new AnnotationConfigApplicationContext(ExternalResourceUnitTest.class);
-	        
-	     ResourceConfig config = new ResourceConfig();
-	     config.register(ExternalResourceUnitTest.class);
-	     config.property("contextConfig", context);
-        return config;
-    }
+	@Before
+	public void init() {
+		MockitoAnnotations.initMocks(this);
+	}
 
 	@Test
 	public void testGetAllValues() {
-
 		Response mockResponse = mock(Response.class);
 		when(externalService.retireveAllData()).thenReturn(mockResponse);
-
 		Response actualResponse = externalResource.getAllValues();
-
 		assertEquals(mockResponse, actualResponse);
 
 	}
+	
+	@Test
+	public void testCallServiceOnce() {
+		externalService.retireveAllData(); 
+		verify(externalService,times(1) ).retireveAllData();
+	}
+	
 
 }
