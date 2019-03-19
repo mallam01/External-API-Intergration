@@ -23,6 +23,8 @@ import com.webservice.ExternalAPIIntergration.service.ExternalService;
 
 
 public class ExternalResourceUnitTest{
+	
+	/**
 
 	@InjectMocks
 	ExternalResource externalResource;
@@ -49,6 +51,6 @@ public class ExternalResourceUnitTest{
 		externalService.retireveAllData(); 
 		verify(externalService,times(1) ).retireveAllData();
 	}
-	
+	**/
 
 }
