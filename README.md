@@ -9,3 +9,4 @@ Techologies used:
 * Cucumber 
 * Integration Testing and E2E testing (Java) 
 * Git/GitHub
+* Postman for testing REST APIs
