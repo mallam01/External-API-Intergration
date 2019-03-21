@@ -4,7 +4,7 @@ Techologies used:
 * Spring Boot 2.1.3
 * Maven 
 * JAX-RS REST API / Jersey Client
-* Junit 
+* Junit / JaCoCo (Java Code Coverage)
 * Mockito 
 * Cucumber 
 * Integration Testing and E2E testing (Java) 
