@@ -10,3 +10,4 @@ Techologies used:
 * Integration Testing and E2E testing (Java) 
 * Git/GitHub
 * Postman for testing REST APIs
+* SonarLint (https://www.sonarlint.org/eclipse/) for detecting the issue and code quality
