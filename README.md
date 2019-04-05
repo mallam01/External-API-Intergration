@@ -11,3 +11,4 @@ Techologies used:
 * Git/GitHub
 * Postman for testing REST APIs
 * SonarLint (https://www.sonarlint.org/eclipse/) for detecting the issue and code quality
+* Oracle SQL Developer
