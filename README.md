@@ -6,10 +6,13 @@ Techologies used:
 * JAX-RS REST API / Jersey Client
 * Junit / Mutation (PitesHistory) / JaCoCo (Java Code Coverage)
 * Mockito 
-* Cucumber 
-* Integration Testing and E2E testing (Java) 
 * Git/GitHub
 * Postman for testing REST APIs
+
+** tools required for the next steps 
+* Cucumber 
+* Integration Testing and E2E testing (Java) 
 * SonarLint (https://www.sonarlint.org/eclipse/) for detecting the issue and code quality
 * Oracle SQL Developer
 * PuTTY for remote acess 
+
