@@ -9,7 +9,7 @@ Techologies used:
 * Git/GitHub
 * Postman for testing REST APIs
 
-** tools required for the next steps 
+# tools required for the next steps 
 * Cucumber 
 * Integration Testing and E2E testing (Java) 
 * SonarLint (https://www.sonarlint.org/eclipse/) for detecting the issue and code quality
