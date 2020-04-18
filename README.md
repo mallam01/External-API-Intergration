@@ -17,3 +17,5 @@ Techologies used:
 * PuTTY for remote acess 
 * Nexus repository
 
+#Run APIs 
+http://localhost:8080/api
